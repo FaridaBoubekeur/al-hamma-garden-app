@@ -1,3 +1,41 @@
-# al_hamma_garden
+# Al Hamma Garden App
 
-AgriChallenge-IdeaGen is an innovative app designed to streamline the management and care of plants, focusing on task tracking, reminders, and bot-assisted gardening tips. It supports the Hamma Garden with tailored functionalities for plant care, including irrigation, floraison, and more. Designed for gardening enthusiasts and professionals alike, it leverages AI to assist in optimizing garden maintenance tasks
+Flutter app prototype for the staff of the **Jardin d'Essai du Hamma**, the botanical
+garden of Algiers, built for the AgriChallenge idea-generation challenge. It gathers the
+garden's daily plant-care work in one place. The interface is in French.
+
+## Features
+
+| Area | Screens |
+|---|---|
+| Plant care | Irrigation (mark trees as watered), maintenance tasks, propagation, flowering |
+| Greenhouses | Live greenhouse dashboard: temperature, humidity, light (kLux), CO₂ (ppm) |
+| Production | Production management, batch reception, seed bank, inventory |
+| Field work | Garden map (`flutter_map`), plant scanner, photo gallery, issue reporting |
+| Follow-up | Monitoring and analysis, reports, notifications and alerts |
+| Assistant | Chat screen for the garden assistant bot (UI prototype) |
+
+## Running it
+
+```bash
+flutter pub get
+flutter run
+```
+
+## Stack
+
+Flutter · Dart · flutter_map · Google Fonts
+
+## Project layout
+
+```
+lib/
+  main.dart
+  screens/    one file per screen (irrigation, greenhouses, seed bank, ...)
+  widgets/    navigation bars and shared cards
+assets/       icons and images
+```
+
+---
+
+Released under the [MIT License](LICENSE).
